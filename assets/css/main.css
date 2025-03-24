@@ -2017,7 +2017,7 @@ section,
   font-weight: 400;
 }
 
-.activity-more .btn-watch-video{
+.activity-more .btn-watch-video {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
@@ -2038,4 +2038,46 @@ section,
   flex-direction: column;
   
 
+}
+.enquiry{
+  background-color: var(--accent-color);
+}
+.enquiry form input[type="text"],
+.enquiry form input[type="email"],
+.enquiry form textarea{
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0px;
+  padding:8px 0px !important;
+  border-bottom: 1px solid color-mix(in srgb, var(--white-color), transparent 40%) !important;
+  
+}
+.enquiry form :-ms-input-placeholder{
+  color: color-mix(in srgb, var(--white-color), transparent 30%) !important;
+}
+.enquiry form ::placeholder{
+  color: color-mix(in srgb, var(--white-color), transparent 30%) !important;
+}
+
+.enquiry .btn-watch-video {
+  background-color: transparent !important;
+  border: none !important;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.enquiry .btn-watch-video:hover{
+  color: color-mix(in srgb, var(--white-color), transparent 20%);
+  text-decoration: none;
+}
+.enquiry-form{
+  border-right: 1px dashed color-mix(in srgb, var(--white-color), transparent 40%);
+ 
+}
+.enquiry .btn-watch-video i{
+  font-size: 24px;
 }
