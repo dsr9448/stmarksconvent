@@ -169,12 +169,10 @@ h6 {
 
 @media (max-width: 480px) {
   .header .logo img {
-    max-height: 24px;
+    width: 100px;
   }
 
-  .header .logo h1 {
-    font-size: 24px;
-  }
+
 }
 
 .header .btn-getstarted,
@@ -392,14 +390,16 @@ h6 {
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: var(--white-color);
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
     cursor: pointer;
     transition: color 0.3s;
   }
-
+  .scrolled .mobile-nav-toggle {
+    color: var(--nav-color);
+  }
   .navmenu {
     padding: 0;
     z-index: 9997;
@@ -768,14 +768,6 @@ h6 {
   bottom: 15px;
 }
 
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0 !important;
-  }
-}
 
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
@@ -1961,7 +1953,7 @@ section,
   /* Add your styles here */
 }
 
-.activities  {
+.activities {
   background: var(--background-color) !important;
 }
 
@@ -1996,7 +1988,8 @@ section,
 .activity-img:hover p {
   opacity: 1;
 }
-.activity-more{
+
+.activity-more {
   border-radius: 10px;
   background-color: var(--accent-color);
   padding: 20px;
@@ -2006,12 +1999,14 @@ section,
   justify-content: center;
 
 }
-.activity-more h5{
+
+.activity-more h5 {
   color: #fff;
   font-size: 24px;
   font-weight: 600;
 }
-.activity-more p{
+
+.activity-more p {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
@@ -2026,36 +2021,41 @@ section,
   align-items: center;
   gap: 10px;
 }
-.activity-more .btn-watch-video:hover{
+
+.activity-more .btn-watch-video:hover {
   color: color-mix(in srgb, var(--white-color), transparent 20%);
   text-decoration: none;
 }
 
-.activity-item{
+.activity-item {
   min-height: 340px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  
+
 
 }
-.enquiry{
+
+.enquiry {
   background-color: var(--accent-color);
 }
+
 .enquiry form input[type="text"],
 .enquiry form input[type="email"],
-.enquiry form textarea{
+.enquiry form textarea {
   background-color: transparent !important;
   border: none !important;
   border-radius: 0px;
-  padding:8px 0px !important;
+  padding: 8px 0px !important;
   border-bottom: 1px solid color-mix(in srgb, var(--white-color), transparent 40%) !important;
-  
+
 }
-.enquiry form :-ms-input-placeholder{
+
+.enquiry form :-ms-input-placeholder {
   color: color-mix(in srgb, var(--white-color), transparent 30%) !important;
 }
-.enquiry form ::placeholder{
+
+.enquiry form ::placeholder {
   color: color-mix(in srgb, var(--white-color), transparent 30%) !important;
 }
 
@@ -2070,14 +2070,96 @@ section,
   align-items: center;
   gap: 10px;
 }
-.enquiry .btn-watch-video:hover{
+
+.enquiry .btn-watch-video:hover {
   color: color-mix(in srgb, var(--white-color), transparent 20%);
   text-decoration: none;
 }
-.enquiry-form{
+
+.enquiry-form {
   border-right: 1px dashed color-mix(in srgb, var(--white-color), transparent 40%);
- 
+
 }
-.enquiry .btn-watch-video i{
+
+.enquiry .btn-watch-video i {
   font-size: 24px;
+}
+
+.counter-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.counter-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+.counter-text {
+  text-align: start;
+}
+
+.counter-text h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+.counter-text p {
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .counters {
+    margin-top: 18px;
+  }
+
+  .counter-item {
+    padding: 15px;
+  }
+
+  .counter-number {
+    font-size: 2rem;
+  }
+
+  .counter-text h4 {
+    font-size: 1rem;
+  }
+
+  .counter-text p {
+    font-size: 0.8rem;
+  }
+
+  .activity-item {
+    min-height: auto;
+  }
+
+  .activity-img {
+    max-height: auto;
+  }
+
+  .footer .copyright {
+    width: 360px;
+  }
+  .enquiry-form {
+    padding: 18px !important; 
+    border: none;
+    /* border-bottom: 1px dashed 
+color-mix(in srgb, var(--white-color), transparent 40%); */
+margin-bottom: 24px;
+}
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
 }

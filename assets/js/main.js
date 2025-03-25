@@ -90,6 +90,12 @@
   document.addEventListener('scroll', toggleScrollTop);
 
   /**
+   * Initiate Pure Counter
+   */
+  new PureCounter();
+
+
+  /**
    * Animation on scroll function and init
    */
   function aosInit() {
