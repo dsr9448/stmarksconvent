@@ -64,7 +64,10 @@
   const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
-      preloader.remove();
+      preloader.classList.add('preloader-fade');
+      setTimeout(() => {
+        preloader.remove();
+      }, 500);
     });
   }
 
