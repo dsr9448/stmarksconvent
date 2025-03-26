@@ -204,3 +204,42 @@
 
   window.addEventListener('scroll', updateLogoOnScroll);
   window.addEventListener('load', updateLogoOnScroll);
+
+// Initialize Isotope
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the isotope container
+  var iso = new Isotope('.isotope-container', {
+    itemSelector: '.isotope-item',
+    layoutMode: 'fitRows'
+  });
+
+  // Filter items on click
+  var filterButtons = document.querySelectorAll('.portfolio-filters li');
+  filterButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('filter-active'));
+      // Add active class to clicked button
+      this.classList.add('filter-active');
+      
+      // Get the filter value
+      var filterValue = this.getAttribute('data-filter');
+      
+      // Filter the items
+      iso.arrange({
+        filter: filterValue === '*' ? null : filterValue
+      });
+    });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('#navmenu ul li a');
+  const currentUrl = window.location.href;
+
+  navLinks.forEach(function(link) {
+    if (link.href === currentUrl) {
+      link.classList.add('active');
+    }
+  });
+});
