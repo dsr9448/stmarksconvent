@@ -41,44 +41,60 @@
       inset: 0;
       z-index: 2;
     }
+
+    @media (max-width: 768px) {
+      .inside-page {
+        height: 280px !important;
+      }
+    }
   </style>
 </head>
 
 <body class="index-page">
   <main class="main">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logow.png" id="logo" alt="">
-        <!-- <h1 class="sitename">QuickStart</h1> -->
-      </a>
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <img src="assets/img/logow.png" id="logo" alt="">
+          <!-- <h1 class="sitename">QuickStart</h1> -->
+        </a>
 
-      <nav id="navmenu" class="navmenu mx-auto">
+
+         <nav id="navmenu" class="navmenu mx-md-auto">
         <ul>
-          <li><a href="index.html" >Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about-us.html">About Us</a></li>
           <li class="dropdown"><a href="academics.html"><span>Academics</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="primary-school.html">Primary School</a></li>
               <li><a href="pre-school.html">Pre-School</a></li>
+              <li><a href="primary-school.html">Primary School</a></li>
               <li><a href="high-school.html">High School</a></li>
-   
+
             </ul>
           </li>
           <li><a href="rules.html">Rules</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+          <li class="dropdown"><a href="gallery.html"><span>Gallery</span> <i
+            class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <ul>
+          <li><a href="blog.html">Blogs</a></li>
+
+
+        </ul>
+      </li>
           <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href=""> <i class="bi bi-headset"></i> <span class="mx-1">|</span> 9876543210</a>
 
-    </div>
-  </header>
+        <a class="btn-getstarted d-none d-md-block" href=""> <i class="bi bi-headset"></i> <span class="mx-1">|</span>
+          9876543210</a>
+
+      </div>
+    </header>
     <!-- Hero Section -->
     <section id="hero" class="hero section inside-page">
       <div class="hero-bg">
@@ -151,35 +167,47 @@
     <section id="academics" class="services section academics">
       <div class="container">
         <div class="row gy-4">
-          
+
           <!-- Pre-School Card -->
           <div class="col-lg-4">
-            <div class="academics-card h-100"  data-aos="fade-up" data-aos-delay="100" style="background: #FFB800; border-radius: 16px; padding: 32px; position: relative;">
-              <span class="badge" style="background: #ffff; padding: 8px 16px; border-radius: 50px; color: #000; margin-bottom: 16px; display: inline-block;">Nursery, LKG, UKG</span>
-              <h3 style="color: white; font-size: 32px; margin-bottom: 12px;">  Pre-School </h3>
-              <p style="color: white; font-size: 18px; margin-bottom: 24px;">Play-based learning, foundational literacy & numeracy skills. </p>
-              <a href="#" class="btn btn-light rounded-pill px-4">Know More</a>
+            <div class="academics-card h-100" data-aos="fade-up" data-aos-delay="100"
+              style="background: #FFB800; border-radius: 16px; padding: 32px; position: relative;">
+              <span class="badge"
+                style="background: #ffff; padding: 8px 16px; border-radius: 50px; color: #000; margin-bottom: 16px; display: inline-block;">Nursery,
+                LKG, UKG</span>
+              <h3 style="color: white; font-size: 32px; margin-bottom: 12px;"> Pre-School </h3>
+              <p style="color: white; font-size: 18px; margin-bottom: 24px;">Play-based learning, foundational literacy
+                & numeracy skills. </p>
+              <a href="pre-school.html" class="btn btn-light rounded-pill px-4">Know More</a>
 
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="academics-card h-100"   data-aos="fade-up" data-aos-delay="200" style="background: #FF4A4A; border-radius: 16px; padding: 32px; position: relative;">
-              <span class="badge" style="background: #ffff; padding: 8px 16px; border-radius: 50px; color: #000; margin-bottom: 16px; display: inline-block;">Grade 1 to 7</span>
+            <div class="academics-card h-100" data-aos="fade-up" data-aos-delay="200"
+              style="background: #FF4A4A; border-radius: 16px; padding: 32px; position: relative;">
+              <span class="badge"
+                style="background: #ffff; padding: 8px 16px; border-radius: 50px; color: #000; margin-bottom: 16px; display: inline-block;">Grade
+                1 to 7</span>
               <h3 style="color: white; font-size: 32px; margin-bottom: 12px;">Primary School</h3>
-              <p style="color: white; font-size: 18px; margin-bottom: 24px;">Core subjects, creative arts, and foundational STEM education.</p>
-              <a href="#" class="btn btn-light rounded-pill px-4">Know More</a>
-             
+              <p style="color: white; font-size: 18px; margin-bottom: 24px;">Core subjects, creative arts, and
+                foundational STEM education.</p>
+              <a href="primary-school.html" class="btn btn-light rounded-pill px-4">Know More</a>
+
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="academics-card h-100"  data-aos="fade-up" data-aos-delay="300" style="background: #2B7A0B; border-radius: 16px; padding: 32px; position: relative;">
-              <span class="badge" style="background: #ffff; padding: 8px 16px; border-radius: 50px; color: #000; margin-bottom: 16px; display: inline-block;">Grade 8 to 10</span>
+            <div class="academics-card h-100" data-aos="fade-up" data-aos-delay="300"
+              style="background: #2B7A0B; border-radius: 16px; padding: 32px; position: relative;">
+              <span class="badge"
+                style="background: #ffff; padding: 8px 16px; border-radius: 50px; color: #000; margin-bottom: 16px; display: inline-block;">Grade
+                8 to 10</span>
               <h3 style="color: white; font-size: 32px; margin-bottom: 12px;">High School</h3>
-              <p style="color: white; font-size: 18px; margin-bottom: 24px;">Rigorous academic training, exam preparation, career guidance.</p>
-              <a href="#" class="btn btn-light rounded-pill px-4">Know More</a>
-        
+              <p style="color: white; font-size: 18px; margin-bottom: 24px;">Rigorous academic training, exam
+                preparation, career guidance.</p>
+              <a href="high-school.html" class="btn btn-light rounded-pill px-4">Know More</a>
+
             </div>
           </div>
 
@@ -188,7 +216,7 @@
     </section>
   </main>
 
- <footer id="footer" class="footer position-relative ">
+  <footer id="footer" class="footer position-relative ">
 
     <div class="container footer-top">
       <div class="row gy-4">

@@ -40,27 +40,35 @@
         <!-- <h1 class="sitename">QuickStart</h1> -->
       </a>
 
-      <nav id="navmenu" class="navmenu mx-auto">
+      <nav id="navmenu" class="navmenu mx-md-auto">
         <ul>
-          <li><a href="index.html" >Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about-us.html">About Us</a></li>
           <li class="dropdown"><a href="academics.html"><span>Academics</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="primary-school.html">Primary School</a></li>
               <li><a href="pre-school.html">Pre-School</a></li>
+              <li><a href="primary-school.html">Primary School</a></li>
               <li><a href="high-school.html">High School</a></li>
-   
+
             </ul>
           </li>
           <li><a href="rules.html">Rules</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+          <li class="dropdown"><a href="gallery.html"><span>Gallery</span> <i
+            class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <ul>
+          <li><a href="blog.html">Blogs</a></li>
+
+
+        </ul>
+      </li>
           <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href=""> <i class="bi bi-headset"></i> <span class="mx-1">|</span> 9876543210</a>
+      <a class="btn-getstarted d-none d-md-block" href=""> <i class="bi bi-headset"></i> <span class="mx-1">|</span>
+        9876543210</a>
 
     </div>
   </header>
@@ -68,12 +76,12 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero inside-page section" >
+    <section id="hero" class="hero inside-page section">
       <div class="hero-bg">
         <img src="assets/img/banner.jpg" alt="">
       </div>
       <div class="container text-center">
-        <div class="row align-items-center">
+        <div class="row align-items-center d-none d-md-block">
           <div class="col-md-8">
             <div class="d-flex flex-column justify-content-center align-items-start text-start">
               <h1 data-aos="fade-up">St. MARK's <br> <span>CONVENT SCHOOL</span></h1>
@@ -127,7 +135,10 @@
           </div>
 
         </div>
-      </div>
+        <div class="d-block d-md-none" data-aos="fade-up" data-aos-delay="300">
+          <img src="assets/img/logow.png" width="280" alt="">
+          <p style="font-size: 1.5rem; letter-spacing: 0.1em;">Learn | Lead | Conquer</p>
+        </div>
 
     </section><!-- /Hero Section -->
     <!-- About Section -->
@@ -234,7 +245,7 @@
                   Co-Curricular & Extra-Curricular Activities
                 </p>
                 <div class="d-flex " data-aos="fade-up" data-aos-delay="200">
-                  <a href="" class=" btn-watch-video d-flex align-items-center"><span>Learn More</span> <i
+                  <a href="gallery.html" class=" btn-watch-video d-flex align-items-center"><span>Learn More</span> <i
                       class="bi bi-arrow-up-right-circle"></i></a>
                 </div>
               </div>
@@ -320,7 +331,7 @@
                 <div>
                   <h3>CCTV Surveillance</h3>
                   <p>CCTV Cameras in each Classes </p>
-                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                  
                 </div>
               </div>
             </div>
@@ -332,7 +343,7 @@
                 <div>
                   <h3>24 hours security</h3>
                   <p>24 hours security </p>
-                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                  
                 </div>
               </div>
             </div>
@@ -344,7 +355,7 @@
                 <div>
                   <h3>Ambulance </h3>
                   <p>Safety Measures </p>
-                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                  
                 </div>
               </div>
             </div>
@@ -356,7 +367,7 @@
                 <div>
                   <h3>Transport facilities </h3>
                   <p>Around 40 KMs radius. </p>
-                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                  
                 </div>
               </div>
             </div>
@@ -366,7 +377,7 @@
                 <div>
                   <h3>Smart Classrooms</h3>
                   <p>Interactive digital learning.</p>
-                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                  
                 </div>
               </div>
             </div>
@@ -377,7 +388,7 @@
                 <div>
                   <h3>Advanced Labs</h3>
                   <p>Equipped Computer labs.</p>
-                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                  
                 </div>
               </div>
             </div>
@@ -388,7 +399,7 @@
                 <div>
                   <h3>Library & E-Resources</h3>
                   <p>Books and digital content.</p>
-                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                  
                 </div>
               </div>
             </div>
@@ -399,7 +410,7 @@
                 <div>
                   <h3>Sports & Fitness</h3>
                   <p>Playgrounds and indoor sports.</p>
-                  <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                  
                 </div>
               </div>
             </div>
@@ -420,59 +431,59 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>ARTICLES & TIPS</h2>
+        <h2>Blogs</h2>
         <p>Latest News & Blogs</p>
       </div><!-- End Section Title -->
       <div class="container">
         <div class="row">
           <div class="col-md-3 blog-main mb-4 mb-md-0">
             <div class="blog-img">
-              <img src="https://placehold.co/600x600" class="img-fluid" alt="">
+              <img src="assets/img/blogs/1.png " class="img-fluid" alt="">
 
               <div class="blog-item">
-                <h3>Blog Title</h3>
-                <p>Lorem ipsum dolor.</p>
-                <a href="#" class="read-more stretched-link">Read More <i class="bi bi-arrow-right"></i></a>
+                <h3>Auditorium</h3>
+                <p>Event in 2021 .</p>
+                <a href="blog-details.html" class="read-more stretched-link">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-md-3 blog-main mb-4 mb-md-0">
             <div class="blog-img">
-              <img src="https://placehold.co/600x600" class="img-fluid" alt="">
+              <img src="assets/img/blogs/2.png" class="img-fluid" alt="">
 
               <div class="blog-item">
-                <h3>Blog Title</h3>
-                <p>Lorem ipsum dolor.</p>
-                <a href="#" class="read-more stretched-link">Read More <i class="bi bi-arrow-right"></i></a>
+                <h3>Sports </h3>
+                <p>Event sports .</p>
+                <a href="blog-details.html" class="read-more stretched-link">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-md-3 blog-main mb-4 mb-md-0">
             <div class="blog-img">
-              <img src="https://placehold.co/600x600" class="img-fluid" alt="">
+              <img src="assets/img/blogs/3.png" class="img-fluid" alt="">
 
               <div class="blog-item">
-                <h3>Blog Title</h3>
-                <p>Lorem ipsum dolor.</p>
-                <a href="#" class="read-more stretched-link">Read More <i class="bi bi-arrow-right"></i></a>
+                <h3>Yoga Event</h3>
+                <p>Event yoga.</p>
+                <a href="blog-details.html" class="read-more stretched-link">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-md-3 blog-main mb-4 mb-md-0">
             <div class="blog-img">
-              <img src="https://placehold.co/600x600" class="img-fluid" alt="">
+              <img src="assets/img/primary-school.jpg" class="img-fluid" alt="">
 
               <div class="blog-item">
-                <h3>Blog Title</h3>
-                <p>Lorem ipsum dolor.</p>
-                <a href="#" class="read-more stretched-link">Read More <i class="bi bi-arrow-right"></i></a>
+                <h3>Annual Day</h3>
+                <p>Event annual day.</p>
+                <a href="blog-details.html" class="read-more stretched-link">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
         </div>
         <div class="text-center ">
 
-          <a href="#" class="know-more "><span>Know More</span><i class="bi bi-arrow-right"></i></a>
+          <a href="blog.html" class="know-more "><span>Know More</span><i class="bi bi-arrow-right"></i></a>
         </div>
 
       </div>
@@ -608,12 +619,12 @@
 
     </section><!-- /Testimonials Section -->
 
- <div class="container">
-  <a href="tel:+08023201035" >
+    <div class="container">
+      <a href="tel:+08023201035">
 
-    <img src="assets/img/admission.jpg" alt="" class="img-fluid rounded-3 mb-5">
-  </a>
- </div>
+        <img src="assets/img/admission.jpg" alt="" class="img-fluid rounded-3 mb-5">
+      </a>
+    </div>
   </main>
 
   <footer id="footer" class="footer position-relative ">
@@ -756,7 +767,7 @@
         }
       });
     });
-    
+
   </script>
 
 </body>

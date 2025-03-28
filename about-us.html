@@ -41,6 +41,11 @@
       inset: 0;
       z-index: 2;
     }
+    @media (max-width: 768px) {
+      .inside-page {
+        height: 280px !important;
+      }
+    }
   </style>
 </head>
 
@@ -55,27 +60,36 @@
         <!-- <h1 class="sitename">QuickStart</h1> -->
       </a>
 
-      <nav id="navmenu" class="navmenu mx-auto">
+  
+      <nav id="navmenu" class="navmenu mx-md-auto">
         <ul>
-          <li><a href="index.html" >Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about-us.html">About Us</a></li>
           <li class="dropdown"><a href="academics.html"><span>Academics</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="primary-school.html">Primary School</a></li>
               <li><a href="pre-school.html">Pre-School</a></li>
+              <li><a href="primary-school.html">Primary School</a></li>
               <li><a href="high-school.html">High School</a></li>
-   
+
             </ul>
           </li>
           <li><a href="rules.html">Rules</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+          <li class="dropdown"><a href="gallery.html"><span>Gallery</span> <i
+            class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <ul>
+          <li><a href="blog.html">Blogs</a></li>
+
+
+        </ul>
+      </li>
           <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href=""> <i class="bi bi-headset"></i> <span class="mx-1">|</span> 9876543210</a>
+
+      <a class="btn-getstarted d-none d-md-block" href=""> <i class="bi bi-headset"></i> <span class="mx-1">|</span> 9876543210</a>
 
     </div>
   </header>
