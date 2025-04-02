@@ -2326,7 +2326,7 @@ color-mix(in srgb, var(--white-color), transparent 40%); */
   transform: scale(1.05) !important;
 }
 
-.features-2 .feature-item .feature-icon {
+ .feature-icon {
   width: 60px;
   height: 60px;
   display: flex;
@@ -3247,4 +3247,8 @@ color-mix(in srgb, var(--white-color), transparent 40%); */
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+.learn p{
+  font-size: 24px !important;
+  letter-spacing: 0.8px !important;
 }
