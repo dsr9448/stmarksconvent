@@ -114,6 +114,11 @@
     <section id="contact" class="contact section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div id="status">
+
+        </div>
+
         <a href="tel:+08023201035">
 
           <img src="assets/img/admission.jpg" alt="" class="img-fluid rounded-3 mb-5">
@@ -156,7 +161,8 @@
               <i class="bi bi-clock"></i>
               <h3>School Timings</h3>
               <p class="text-center">Monday to Friday: 9:00 AM – 3:30 PM <span class="d-none d-md-inline"> / </span>
-                <span class="d-inline d-md-none"><br></span> Saturday: 9:00 AM – 12:40 PM</p>
+                <span class="d-inline d-md-none"><br></span> Saturday: 9:00 AM – 12:40 PM
+              </p>
 
             </div>
           </div><!-- End Info Item -->
@@ -185,8 +191,7 @@
             <p>Contact us for more information</p>
           </div><!-- End Section Title -->
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="400">
+            <form action="contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -344,7 +349,18 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    if (window.location.search.includes('status=success')) {
+      document.getElementById('status').innerHTML = '<div class="alert alert-success" role="alert">Message sent successfully!</div>';
+    } else if (window.location.search.includes('status=failed')) {
+      document.getElementById('status').innerHTML = '<div class="alert alert-danger" role="alert">Failed to send message. Please try again.</div>';
+    }
 
+    else if (window.location.search.includes('status=error')) {
+      document.getElementById('status').innerHTML = '<div class="alert alert-danger" role="alert">Failed to send message. Please try again.</div>';
+    }
+
+  </script>
 
 
 </body>

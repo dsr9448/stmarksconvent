@@ -282,7 +282,7 @@
           <div class="col-md-10 content enquiry-form d-flex flex-column justify-content-center p-5 text-white">
             <!-- <p class="who-we-are text-light">Request a Consultation</p> -->
             <h3 class="text-light">Enquire Now </h3>
-            <form>
+            <form action="enquire.php" method="post">
               <div class="row">
                 <div class="col-6">
                   <div class="mb-3">
@@ -316,6 +316,7 @@
                     class="bi bi-arrow-up-right-circle"></i></button>
               </div>
             </form>
+            <div id="status"></div>
           </div>
 
           <div class="col-md-2 text-center">
@@ -739,7 +740,9 @@
       </div>
     </div>
   </div>
-
+  <a href="https://api.whatsapp.com/send?phone=8867376737&text=Hello%2C%20I%20need%20more%20information%20about%20St.%20Mark's%20Convent." class="float" target="_blank">
+    <i class="bi bi-whatsapp my-float"></i>
+    </a>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -789,7 +792,14 @@
     });
 
   </script>
-
-</body>
+  <script>
+    if (window.location.search.includes('status=success')) {
+      alert('Message sent successfully!');
+    } else if (window.location.search.includes('status=failed')) {
+      alert('Failed to send message. Please try again.');
+    } else if (window.location.search.includes('status=error')) {
+      alert('Failed to send message. Please try again.');
+    }
+  </script>
 
 </html>

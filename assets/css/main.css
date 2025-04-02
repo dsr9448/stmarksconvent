@@ -281,8 +281,8 @@ h6 {
   }
 
   .navmenu li:hover>a,
-  .navmenu .active,
-  .navmenu .active:focus {
+  .navmenu ,
+  .navmenu :focus {
     color: var(--nav-hover-color);
   }
 
@@ -3252,3 +3252,21 @@ color-mix(in srgb, var(--white-color), transparent 40%); */
   font-size: 24px !important;
   letter-spacing: 0.8px !important;
 }
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
