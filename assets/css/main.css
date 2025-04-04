@@ -3270,3 +3270,6 @@ color-mix(in srgb, var(--white-color), transparent 40%); */
   justify-content: center;
 }
 
+.font-roboto-slab{
+  font-family: 'Roboto Slab', serif;
+}
